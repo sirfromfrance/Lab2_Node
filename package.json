@@ -1,0 +1,21 @@
+{
+  "name": "lab2_node",
+  "version": "1.0.0",
+  "description": "lab 2",
+  "type": "module", 
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirfromfrance/Lab2_Node.git"
+  },
+  "author": "Valeriia Hrytsenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sirfromfrance/Lab2_Node/issues"
+  },
+  "homepage": "https://github.com/sirfromfrance/Lab2_Node#readme"
+}

@@ -1,8 +1,8 @@
 import * as http from 'node:http'; 
-import router from './router.js';
+import router from '../router.js';
 import defaultHandler from './defaultHandler.js';
 import helpers from './helpers.js';
-import {safeJSON} from ".utils.js";
+import {safeJSON} from "./utils.js";
 
 
 const processedContentTypes = 
@@ -48,7 +48,8 @@ server.on('clientError',(err, socket)=>
 {
     socket.end('HTTP/1.1 400 Bad Request\r\n\r\n');
 });
-server.listen(parseInt(process.env.PORT)||9000);
+server.listen(parseInt(process.env.PORT)||9000)
+{console.log(`listening on ${parseInt(process.env.PORT)||9000}`)};
 process.on('SIGINT',() =>
 {
 server.close(error=>
